@@ -16,7 +16,8 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
-
+    <!-- connecting script.js -->
+    <script src="script.js" defer></script>
     <title>Guess My Number</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
       <h1 class="title">Guess My Number</h1>
 
       <div class="guess-box">
-        <p><i class="las la-question"></i></p>
+        <p class="guess"><i class="las la-question"></i></p>
       </div>
     </header>
     <main>
@@ -44,9 +45,9 @@
           min="0"
           max="20"
         />
-        <div class="check-box">
+        <button class="check-box">
           <i class="las la-check"></i>
-        </div>
+        </button>
       </section>
       <section class="right">
         <p class="score-label">Score: <span class="score">0</span></p>

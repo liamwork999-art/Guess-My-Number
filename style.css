@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Sniglet", cursive;
+  font-family: 'Sniglet', cursive;
 }
 
 body {
@@ -22,12 +22,15 @@ body {
 .highscore-label {
   display: inline;
   font-size: 30px;
+  font-weight: 700;
   color: bisque;
 }
+
 /* The range which u can geuss from */
 .btn-hint {
   display: inline;
   font-size: 30px;
+  font-weight: 600;
   color: bisque;
 }
 /* The title of the game */

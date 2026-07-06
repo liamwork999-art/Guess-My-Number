@@ -1,7 +1,10 @@
-// Guess My Number
+// Guess My Number - Logic code
 
 'use strict';
 
-console.log(document.querySelector('.message').textContent);
-console.log('hi');
-// Post-ponned Lesson -- coming back when Html and CSS are done
+const score = 5;
+const hiddenNumber = 13;
+// document.querySelector('.guess').textContent = hiddenNumber;
+// document.querySelector('.score').textContent = score;
+document.querySelector('.input-number').value = 0;
+// console.log(document.querySelector('.input-number').value);
