@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Sniglet", cursive;
+}
+
+body {
+  min-height: 100vh;
+  padding: 30px;
+  padding-bottom: 0px;
+  background-image: linear-gradient(to bottom, #004d1a 0%, #000000 40%);
+  background-attachment: fixed;
+}
+/* the container for the two below */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+/* The highest score ever made */
+.highscore-label {
+  display: inline;
+  font-size: 30px;
+  color: bisque;
+}
+/* The range which u can geuss from */
+.btn-hint {
+  display: inline;
+  font-size: 30px;
+  color: bisque;
+}
+/* The title of the game */
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+  margin-top: 40px;
+  color: coral;
+}
+
+/* The hidden number behind the question mark */
+.guess-box {
+  color: #22c55e;
+  font-size: 60px;
+  font-weight: bold;
+  border: 2px solid green;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+
+  /* 1. Shrink the box to a specific size around the icon */
+  width: 90px;
+  height: 90px;
+
+  /* 2. Center the icon perfectly inside this box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 3. Center the box itself horizontally on the screen */
+  margin: 20px auto;
+}
+
+/* The whole main part */
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15%;
+}
+
+/* The whole left group */
+.left {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+/* The message above the input */
+.left .message {
+  font-size: 30px;
+  font-weight: 650;
+  margin-bottom: 20px;
+  color: bisque;
+}
+
+/* For the Input */
+.left .input-number {
+  width: 120px;
+  font-size: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #141414; /* Deep obsidian black */
+  color: #4ade80; /* Vibrant light neon green */
+  border: 3px solid #22c55e; /* Matching green border */
+  border-radius: 10px;
+  font-weight: bold; /* Makes the number pop more */
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+/* for the scroll inside the input-box */
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+  height: 50px;
+  opacity: 0; /* Ensures they stay invisible */
+}
+
+/* This the check box */
+.left .check-box {
+  display: inline-block;
+  font-size: 30px;
+  border: 2px solid #22c55e;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(34, 197, 94, 0.5);
+  padding: 4px 10px;
+  color: white;
+  background-color: #22c55e;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+/* This is the whole right section */
+.right {
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.right .score-label {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: red;
+}
+
+.right .again-button {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 10px 20px;
+  border: 3px solid #22c55e;
+  color: #22c55e;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(34, 197, 94, 0.4);
+  background-color: #141414;
+}
