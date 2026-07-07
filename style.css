@@ -49,7 +49,7 @@ body {
   font-weight: bold;
   border: 2px solid green;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+  box-shadow: 0 0 50px rgba(34, 197, 94, 0.6);
 
   /* 1. Shrink the box to a specific size around the icon */
   width: 90px;
@@ -61,7 +61,8 @@ body {
   align-items: center;
 
   /* 3. Center the box itself horizontally on the screen */
-  margin: 20px auto;
+  margin: 40px auto;
+  /* margin-top: 100px; */
 }
 
 /* The whole main part */
