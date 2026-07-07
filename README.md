@@ -38,7 +38,13 @@ Open the project in your browser:
 2. Open [Guess_My_Number/index.html](Guess_My_Number/index.html).
 3. Run it with Live Server or simply open the file in a browser.
 
-## 🛠️ Technologies used
+## �️ Screenshots
+
+![Guess My Number Preview](screenshot.png)
+
+![Guess My Number Gameplay](screenshot1.png)
+
+## �🛠️ Technologies used
 
 - HTML
 - CSS

@@ -36,4 +36,13 @@ document.querySelector('.check-box').addEventListener('click', function () {
   }
 });
 
+// making the again button increase in size when hovered
+document
+  .querySelector('.again-button')
+  .addEventListener('mouseenter', function () {});
+
+document
+  .querySelector('.again-button')
+  .addEventListener('mouseleave', function () {});
+
 console.log(hiddenNumber);
