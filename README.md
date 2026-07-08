@@ -44,6 +44,8 @@ Open the project in your browser:
 
 ![Guess My Number Gameplay](screenshot1.png)
 
+![Guess My Number Gameplay](screenshot2.png)
+
 ## �🛠️ Technologies used
 
 - HTML

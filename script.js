@@ -2,7 +2,8 @@
 
 'use strict';
 
-const hiddenNumber = Math.trunc(Math.random() * 20) + 1;
+let hiddenNumber = Math.trunc(Math.random() * 20) + 1;
+const winModal = document.getElementById('winModal');
 
 let score = 20;
 document.querySelector('.score-label .score').textContent = score;
@@ -13,7 +14,9 @@ document.querySelector('.check-box').addEventListener('click', function () {
   if (!guessed || guessed < 1 || guessed > 20) {
     document.querySelector('.message').textContent = '🚫Not Valid!🚫';
   } else if (guessed === hiddenNumber) {
+    // When player wins
     document.querySelector('.message').textContent = '🎉You Win🎉';
+    winModal.classList.remove('hidden');
     document.querySelector('.guess').textContent = String(hiddenNumber);
   } else if (guessed > hiddenNumber) {
     if (score > 1) {
@@ -36,13 +39,22 @@ document.querySelector('.check-box').addEventListener('click', function () {
   }
 });
 
-// making the again button increase in size when hovered
-document
-  .querySelector('.again-button')
-  .addEventListener('mouseenter', function () {});
+// This will reset the game
+document.querySelector('.again-button').addEventListener('click', function () {
+  winModal.classList.add('hidden');
+  score = 20;
+  document.querySelector('.score').textContent = score;
+  document.querySelector('.message').textContent = 'Start Guessing...';
+  document.querySelector('.guess').textContent = '?';
+  hiddenNumber = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector('.input-number').value = '';
+});
 
-document
-  .querySelector('.again-button')
-  .addEventListener('mouseleave', function () {});
+// This will turn off the victory screen
+document.getElementById('winModal').addEventListener('click', function (event) {
+  if (event.target === this) {
+    this.classList.add('hidden');
+  }
+});
 
 console.log(hiddenNumber);
